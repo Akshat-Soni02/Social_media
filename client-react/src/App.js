@@ -11,6 +11,7 @@ import { HelmetProvider } from "react-helmet-async";
 
 const Groups = lazy(() => import("scenes/chat/Groups.jsx"));
 const Chat = lazy(() => import("scenes/chat/Chat.jsx"));
+const ChatHome = lazy(() => import("scenes/chat/ChatHome.jsx"));
 
 function App() {
   const mode = useSelector((state) => state.mode);
@@ -35,6 +36,7 @@ function App() {
                   element={isAuth ? <ProfilePage /> : <Navigate to="/" />}
                 />
                 <Route path="/chat/:chatId" element={<Chat />} />
+                <Route path="/chat" element={<ChatHome />} />
                 <Route path="/groups" element={<Groups />} />
               </Routes>
             </Suspense>
