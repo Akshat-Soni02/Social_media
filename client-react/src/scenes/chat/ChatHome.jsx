@@ -3,6 +3,7 @@ import Navbar from "scenes/navbar/index.jsx";
 import { useSelector } from "react-redux";
 import UserWidget from "scenes/widgets/UserWidget";
 import { Box, useMediaQuery } from "@mui/material";
+import ChatsContainer from "./ChatsContainer";
 
 const ChatHome = () => {
   const { _id, picturePath } = useSelector((state) => state.user);
@@ -18,6 +19,7 @@ const ChatHome = () => {
         gap="0.5rem"
         justifyContent="space-between"
       >
+        <ChatsContainer />
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
           <UserWidget userId={_id} picturePath={picturePath} />
         </Box>

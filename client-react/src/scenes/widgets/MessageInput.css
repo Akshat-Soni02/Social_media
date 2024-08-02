@@ -1,0 +1,35 @@
+.form-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.625rem;
+  background-color: #374151; /* Equivalent to bg-gray-700 */
+  border: 1px solid #4b5563; /* Equivalent to border-gray-600 */
+  border-radius: 0.5rem;
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  color: white;
+}
+
+.send-button {
+  position: absolute;
+  top: 0.6rem;
+  background-color: transparent;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem; /* Equivalent to pe-3 */
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
